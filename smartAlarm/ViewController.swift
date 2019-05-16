@@ -16,22 +16,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // 1
-        /*let url = URL(string: "https://ioscreator.com")!
-        webView.load(URLRequest(url: url))
-        
-        // 2
-        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
-        toolbarItems = [refresh]
-        navigationController?.isToolbarHidden = false*/
-        
     }
-
-    /*override func loadView() {
-        webView = WKWebView()
-        webView.navigationDelegate = self
-        view = webView
-    }*/
 
     @IBAction func turnOn(_ sender: Any) {
         let url = NSURL(string: "http://192.168.43.185/LED=ON")
